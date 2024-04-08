@@ -28,8 +28,8 @@ h1{
     margin-bottom: 16px;
 }
 div.content{
-    padding: 0px 30px 30px 30px;
-    margin: 60px 10% 50px 10%;
+    padding: 0px 8px 20px 8px;
+    margin: 40px 8px 40px 8px;
     background-color: #fff;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     overflow: visible;
@@ -66,21 +66,21 @@ div.info table{
     bottom: 0;
     background-color: #6C829DC0;
     color: #fff;
-    height: 80px;
+    height: 50px;
 }
 
 div.info table td{
     text-align: center;
-    font-size: 14px;
+    font-size: 12px;
     vertical-align: top;
 }
 div.info table th{
-    font-size: 16px;
+    font-size: 14px;
     vertical-align: bottom;
     padding-bottom: 6px;
 }
 div.colonne{
-    width: 45%;
+    width: 100%;
     margin-top: 20px;
 }
 div.colonne h2{
@@ -94,9 +94,6 @@ div.colonne h2{
 }
 div.col-1{
     display: inline-block;
-}
-div.col-2{
-    float: right;
 }
 div.ingredients p{
     text-align: center;
@@ -132,3 +129,38 @@ div.preparation table p.numero{
     border-radius: 80%;
     margin: 0;
 }
+
+/* For PC: */
+@media only screen and (min-width: 768px) {
+    div.content{
+        padding: 0px 30px 30px 30px;
+        margin: 60px 10% 50px 10%;
+        min-width: 350px;
+    }
+    div.info table{
+        height: 80px;
+    }
+    div.info table td{
+        font-size: 14px;
+    }
+    div.info table th{
+        font-size: 16px;
+    }
+    div.colonne{
+        width: 45%;
+    }
+    div.col-2{
+        float: right;
+    }
+
+  }
+
+  @media only screen and (min-width: 960px) {
+    div.content{
+        margin-left: auto;
+        margin-right: auto;
+        width: 685px;
+    }
+    
+  }
+    
